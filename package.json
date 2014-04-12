@@ -1,0 +1,40 @@
+{
+  "name": "HelloFamousGulped",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PEM--",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-load-plugins": "^0.5.0",
+    "gulp-util": "^2.2.14",
+    "gulp-autoprefixer": "0.0.6",
+    "gulp-imagemin": "^0.2.0",
+    "gulp-clean": "^0.2.4",
+    "gulp-cache": "^0.1.3",
+    "gulp-ruby-sass": "^0.4.3",
+    "gulp-connect": "^2.0.5",
+    "gulp-cssmin": "^0.1.4",
+    "gulp-jade": "^0.5.0",
+    "gulp-concat": "^2.2.0",
+    "gulp-plumber": "^0.6.1",
+    "gulp-watch": "^0.5.4",
+    "gulp-changed": "^0.3.0",
+    "gulp-bower": "^0.0.4",
+    "gulp-open": "^0.2.8",
+    "coffeeify": "^0.6.0",
+    "browserify": "^3.41.0",
+    "deamdify": "^0.1.1",
+    "vinyl-source-stream": "^0.1.1",
+    "debowerify": "^0.7.0",
+    "uglifyify": "^2.1.1"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "HelloFamousGulped",
+  "version": "0.0.0",
+  "authors": [
+    "PEM-- <pemarchandet@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "famous": "git@github.com:Famous/famous.git#v0_1_1"
+  }
+}
