@@ -13,6 +13,8 @@
     "tests"
   ],
   "dependencies": {
-    "famous": "git@github.com:Famous/famous.git#v0_1_1"
+    "famous-polyfills": "git@github.com:Famous/polyfills.git#0.1.1",
+    "famous": "git@github.com:Famous/famous.git#v0.2.0",
+    "colors": "https://github.com/mrmrs/colors.git"
   }
 }

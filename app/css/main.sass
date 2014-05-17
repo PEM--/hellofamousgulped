@@ -38,13 +38,21 @@ table
 // Import Famo.us's CSS
 @import bower_components/famous/core/famous.css
 
-// Real theming happens hereafter
-$bgColor: #FF851B
-$mainColor: white
+// Import Colors
+@import bower_components/colors/sass/colors
 
-html, body, .bgColor
-  background-color: $bgColor 
+// Real theming happens hereafter
+html, body
+  background-color: $orange
 
 body
-  color: $mainColor
+  color: $white
   font-family: Helvetica, Arial, sans-serif
+
+.header-surface
+  background-color: $red
+  color: $yellow
+
+.footer-surface
+  background-color: $green
+  color: $white

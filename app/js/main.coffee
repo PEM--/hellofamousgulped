@@ -1,21 +1,40 @@
+'use strict'
+
+# Use Famo.us polyfills: Universal access to CSS3 transforms
+require 'famous-polyfills/index'
+
+# Get nice colors
+require 'colors/coffee/colors'
+
+# Require Famo.us libraries
 Engine = require 'famous/core/Engine'
 Surface = require 'famous/core/Surface'
-Modifier = require 'famous/core/Modifier'
 
 # Create the main context
 mainContext = Engine.createContext()
 
-outline = new Surface
-  size: [200, 200]
-  content: 'Hello world in Famo.us'
-  classes: ['bgColor']
+HeaderFooterLayout = require 'famous/views/HeaderFooterLayout'
+layout = new HeaderFooterLayout
+  headerSize: 100
+  footerSize: 50
+mainContext.add  layout
+layout.header.add new Surface
+  content: 'Header'
+  size: [undefined, 100]
+  classes: ['header-surface']
   properties:
-    lineHeight: '200px'
+    lineHeight: '100px'
     textAlign: 'center'
-
-outlineModifier = new Modifier
-  origin: [0.5, 0.5]
-
-mainContext
-  .add outlineModifier
-  .add outline
+layout.content.add new Surface
+  content: 'Content'
+  size: [undefined, undefined]
+  properties:
+    lineHeight: '300px'
+    textAlign: 'center'
+layout.footer.add new Surface
+  content: 'Footer'
+  size: [undefined, 50]
+  classes: ['footer-surface']
+  properties:
+    lineHeight: '50px'
+    textAlign: 'center'
