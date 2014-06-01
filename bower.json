@@ -14,7 +14,7 @@
   ],
   "dependencies": {
     "famous-polyfills": "git@github.com:Famous/polyfills.git#0.1.1",
-    "famous": "git@github.com:Famous/famous.git#v0.2.0",
+    "famous": "git@github.com:Famous/famous.git#v0.2.1",
     "colors": "https://github.com/mrmrs/colors.git"
   }
 }
