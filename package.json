@@ -8,7 +8,21 @@
   },
   "author": "PEM--",
   "license": "MIT",
-  "dependencies": {},
+  "browserify": {
+    "transform": [
+      "famousify",
+      "cssify",
+      "brfs"
+    ]
+  },
+  "dependencies": {
+    "famousify": "^0.1.5",
+    "brfs": "^1.2.0",
+    "cssify": "^0.6.0",
+    "famous": "0.3.3",
+    "famous-polyfills": "^0.3.0",
+    "famousify": "^0.1.5"
+  },
   "devDependencies": {
     "browserify": "^4.2.0",
     "coffee-script": "^1.7.1",
