@@ -1,7 +1,10 @@
 'use strict'
 
+# Import Famo.us CSS
+require '../css'
+
 # Use Famo.us polyfills: Universal access to CSS3 transforms
-require 'famous-polyfills/index'
+require 'famous-polyfills'
 
 # Get nice colors
 require 'colors/coffee/colors'
